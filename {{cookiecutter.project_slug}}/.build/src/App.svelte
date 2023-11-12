@@ -15,7 +15,6 @@
 {:then value}
     {#await client.getState() then appState}
         {#if appState.length}
-            <p>Rendering from prior state</p>
             {#each appState as child}
                 <RenderComponent component_map="{component_map}" component="{child}"/>
             {/each}

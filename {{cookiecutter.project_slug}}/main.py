@@ -2,8 +2,7 @@ import asyncio
 from streamjam import StreamJam
 
 app = StreamJam(
-    name="{{cookiecutter.project_slug}}",
-    component_map={}
+    name="{{cookiecutter.project_slug}}"
 )
 
 

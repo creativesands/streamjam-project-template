@@ -1,6 +1,6 @@
 <script>
     import { setContext } from "svelte"
-    import { StreamJamClient } from "streamjam"
+    import { StreamJamClient, DevTools } from "streamjam"
     import Root from "./components/Root.svelte"
 
     const client = new StreamJamClient('ws://localhost:7755/client-1')
@@ -15,3 +15,5 @@
 {:then _}
     <Root/>
 {/await}
+
+<DevTools/>

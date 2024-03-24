@@ -9,7 +9,7 @@
         window.location.href += 'default-client'
     }
 
-    const client = new StreamJamClient('ws://localhost:7755/client-1')
+    const client = new StreamJamClient(`ws://localhost:7755/${client_id}`)
     let client_connection = client.connect()
 
     setContext('streamjam', client)

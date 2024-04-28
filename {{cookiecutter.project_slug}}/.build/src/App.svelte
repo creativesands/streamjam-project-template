@@ -9,7 +9,7 @@
         window.location.href += 'default-client'
     }
 
-    const client = new StreamJamClient(`ws://localhost:7755/${client_id}`)
+    const client = new StreamJamClient(`${location.origin.replace(/^http/, 'ws')}/_sjsocket/${client_id}`)
     let client_connection = client.connect()
 
     setContext('streamjam', client)
